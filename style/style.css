@@ -1,0 +1,45 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+    width: 100%;
+    height: 100vh;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container .cell
+{
+    height: 100%;
+}
+
+#surface
+{
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 1280px)
+{
+
+    .container
+    {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+}
+
+.fill
+{
+    flex-grow: 1;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Mickaël Coste" />
+        <meta charset="utf-8" />
+
+        <link rel="stylesheet" href="style/style.css" />
+
+        <script type="text/javascript" src="js/circle-grid.js"></script>
+        <script type="text/javascript" src="js/engine.js"></script>
+        <script type="text/javascript" src="js/table-animator.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+
+        <title>ModTimes</title>
+    </head>
+    <body>
+        <div class="container">
+            <section class="cell" id="commands">
+                <h1>ModTimes</h1>
+                <h2>Table fixe</h2>
+                <form id="table-fixed-form">
+                    <p>
+                        <label for="table-fixed">Table : </label>
+                        <input type="text" name="table-fixed" id="table-fixed-input" />
+                    </p>
+                    <p>
+                        <label for="table-fixed-modulo">Modulo : </label>
+                        <input type="text" name="table-fixed-modulo" id="table-fixed-modulo-input" />
+                    </p>
+                    <p><input type="submit" value="OK" /></p>
+                </form>
+                <h2>Tables animées</h2>
+                <form id="table-animated-form">
+                    <p>
+                        <label for="table-animated-start">Table début : </label>
+                        <input type="text" name="table-animated-start" id="table-animated-start-input" />
+                    </p>
+                    <p>
+                        <label for="table-animated-end">Table fin : </label>
+                        <input type="text" name="table-animated-end" id="table-animated-end-input" />
+                    </p>
+                    <p>
+                        <label for="table-animated-precision">Précision : </label>
+                        <input type="text" name="table-animated-precision" id="table-animated-precision-input" />
+                    </p>
+                    <p>
+                        <label for="table-animated-modulo">Modulo : </label>
+                        <input type="text" name="table-animated-modulo" id="table-animated-modulo-input" />
+                    </p>
+                    <p><input type="submit" value="OK" /></p>
+                </form>
+            </section>
+            <section class="cell fill" id="rendering">
+                <canvas id="surface"></canvas>
+            </section>
+        </div>
+    </body>
+</html>
